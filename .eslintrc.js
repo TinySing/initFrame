@@ -1,17 +1,8 @@
+// .eslintrc.js
+/** @format */
 module.exports = {
-  root: true,
-  env: {
-    node: true
+  extends: [require.resolve('snb-fabric/dist/eslint')],
+  globals: {
+    page: true,
   },
-  'extends': [
-    'plugin:vue/essential',
-    'eslint:recommended'
-  ],
-  parserOptions: {
-    parser: 'babel-eslint'
-  },
-  rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
-  }
-}
+};

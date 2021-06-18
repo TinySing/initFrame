@@ -58,8 +58,7 @@ $base-tag-item-height: 34px;
 $base-menu-item-height: 50px;
 //app-main的高度
 $base-app-main-height: calc(
-  100vh - #{$base-nav-bar-height} - #{$base-tags-bar-height} - #{$base-padding} -
-    56px - 20px
+  100vh - #{$base-nav-bar-height} - #{$base-tags-bar-height} - #{$base-padding} - 56px - 20px
 );
 //纵向布局时左侧导航未折叠时的宽度
 $base-left-menu-width: 230px;
@@ -93,20 +92,20 @@ $base-transition-time: 0.2s;
   title-color: $base-title-color;
 }
 @mixin text-point {
-  white-space: nowrap;
   overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
 
 @mixin begin-point {
-  content: '';
-  border-radius: 3px;
+  position: absolute;
+  top: 50%;
+  left: -3px;
+  z-index: 999999;
   width: 6px !important;
   height: 6px;
   margin-right: 8px;
-  position: absolute;
-  top:50%;
+  border-radius: 3px;
   transform: translateY(-50%);
-  left:-3px;
-  z-index: 999999;
+  content: '';
 }
