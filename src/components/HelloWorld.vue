@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>哈哈哈哈哈哈哈哈哈哈</h1>
+    <h1>哈哈哈哈哈哈哈哈哈哈去问驱蚊器为</h1>
   </div>
 </template>
 
