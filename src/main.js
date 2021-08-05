@@ -2,6 +2,9 @@ import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
 import store from './store';
+import '@/element/index';
+
+import 'element-ui/lib/theme-chalk/index.css';
 import '@/assets/css/common.scss';
 
 Vue.config.productionTip = false;

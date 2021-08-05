@@ -1,7 +1,8 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <HelloWorld :msg="msg" />
+    <el-button>22</el-button>
   </div>
 </template>
 
@@ -16,11 +17,16 @@ export default {
     HelloWorld,
   },
   data() {
-    return {};
+    return {
+      msg: '1',
+    };
   },
   mounted() {
-    this.getList1();
-    this.test2();
+    // setInterval(()=>{
+    //   this.msg+='1+'
+    // },5000)
+    // this.getList1();
+    // this.test2();
   },
   methods: {
     // getList(){
